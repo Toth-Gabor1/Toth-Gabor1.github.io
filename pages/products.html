@@ -5,16 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 </head>
 
 <body style="background-color: blanchedalmond;">
-    <ul>
-        <li><a href="/">Kezdőlap</a></li>
-        <li><a href="/pages/products.html">Termékek</a></li>
-        <li><a href="/pages/orders.html">Rendelés</a></li>
-        <li><a href="/about.html">Rólunk</a></li>
-    </ul>
-    <h1>Termékek</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="btn btn-warning" href="/index.html">Fantastic Burger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/products.html">Termékek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/orders.html">Rendelés</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Keresés..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+            </form>
+        </div>
+    </nav>
+    <h1 style="text-align: center; font-size: 65px; font-family:'Metal Mania', cursive;"">Termékek</h1>
+
+    <table class="table table-striped table-dark col-12">
+        <thead>
+          <tr>
+            <th scope="col">Megnevezés</th>
+            <th scope="col">Feltétek</th>
+            <th scope="col">Ár</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Kis Burger</th>
+            <td>buci, választható szósz, zöldségek, hús</td>
+            <td>1 100 Huf</td>
+          </tr>
+          <tr>
+            <th scope="row">Közepes Burger</th>
+            <td>buci, választható szósz, zöldségek, dupla hús</td>
+            <td>1 200 Huf</td>
+          </tr>
+          <tr>
+            <th scope="row">Nagy Burger</th>
+            <td>buci, választható szósz, zöldségek, tripla hús</td>
+            <td>1 500 Huf</td>
+          </tr>
+        </tbody>
+      </table>
 </body>
 
 </html>

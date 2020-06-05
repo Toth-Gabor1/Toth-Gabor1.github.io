@@ -6,32 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 </head>
+
 <body style="background-color: blanchedalmond;">
 
-    <h1>Fantastic Burger</h1>
+    <h1
+        style="text-align: center; font-size: 80px; font-family:'Metal Mania', cursive;background-image:url(/img/jbg.jpg);">
+        Fantastic Burger</h1>
 
-    <ul>
-        <li><a href="/">Kezdőlap</a></li>
-        <li><a href="/pages/products.html">Termékek</a></li>
-        <li><a href="/pages/orders.html">Rendelés</a></li>
-        <li><a href="/about.html">Rólunk</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="btn btn-warning" href="/index.html">Fantastic Burger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <h2>A rendelés lépései</h2>
-    <ol>
-        <li>Válassz egy burgert</li>
-        <li>Válassz feltétet, extrát</li>
-        <li>Add meg a címed</li>
-        <li>Egyél!</li>
-    </ol>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/products.html">Termékek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/orders.html">Rendelés</a>
+                </li>
 
-    <a href="https://www.tasteofhome.com/">
-        Browse Taste of Home recipes
-    </a>
-    <a href="/pages/orders.html">orders</a>
-    <a target="blank" href="https://www.tasteofhome.com/">
-        <img width="56" src="img/burger.jpg" alt="tasty burger">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Keresés..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+            </form>
+        </div>
+    </nav>
+
+    <h2 style="text-align: center; font-size: 65px; font-family:'Metal Mania', cursive;">A rendelés lépései</h2>
+
+    <li style="text-align: center; font-weight: bold;">  1.Válassz egy burgert</li>
+    <li style="text-align: center; font-weight: bold;">  2.Válassz feltétet, extrát</li>
+    <li style="text-align: center; font-weight: bold;">  3.Add meg a címed</li>
+<u><li style="text-align: center; font-weight: bold;">  4.Egyél!</li></u>
+
+
+    
+    <a target="blank" href="/pages/products.html">
+        <img width="400" src="img/burger.jpg" alt="tasty burger">
     </a>
 
 </body>

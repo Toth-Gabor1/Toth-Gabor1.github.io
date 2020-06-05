@@ -5,49 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: blanchedalmond;">
-    <ul>
-        <li><a href="/">Kezdőlap</a></li>
-        <li><a href="/pages/products.html">Termékek</a></li>
-        <li><a href="/pages/orders.html">Rendelés</a></li>
-        <li><a href="/about.html">Rólunk</a></li>
-    </ul>
-    <h1>Rólunk</h1>
+<body style="background-color: blanchedalmond; background-image: url(/img/open4.jpg); background-repeat: no-repeat; background-position:center; background-position: bottom; background-position-x:center; background-position-y: 130px;
+background-size: 260px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="btn btn-warning" href="/index.html">Fantastic Burger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <table>
-        <caption>Nyitvatartás </caption>
-        <thead>
-            <tr>   
-                <th>Nap</th>
-                <th>Nyitás</th>
-                <th>Zárás</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hétfő - Péntek</td>
-                <td>09:00</td>
-                <td>21:00</td>
-            </tr>
-            <tr>
-                <td>Szombat</td>
-                <td>10:00</td>
-                <td>22:00</td>
-            <tr>
-                <td>Vasárnap</td>
-                <td colspan="3">ZÁRVA</td>
-            </tr>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">
-                    &copy; 2020.
-                </td>
-            </tr>
-        </tfoot>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Kezdőlap <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/products.html">Termékek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/orders.html">Rendelés</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Keresés..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+            </form>
+        </div>
+    </nav>
+    <h1 style="text-align: center; font-size: 65px; font-family:'Metal Mania', cursive;">Nyitvatartás</h1>
+    <div style="margin-top: 10px;">
+        <p><font>&nbsp;&nbsp;&nbsp;<br>
+            &nbsp;&nbsp;&nbsp;<br>
+            &nbsp;&nbsp;&nbsp;<br></font></p>
+            <p>
+    </div>
+    <table position-x= 200px; border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+        <tr>
+            <td width="100%" height="100%" valign="middle" align="center">
+                <table border="solid" width=18.5% text-align="center">
+
+                    <tr>
+
+                        <td style="text-align: center;">Nap</td>
+
+                        <td style="text-align: center;">Nyitás</td>
+
+                        <td style="text-align: center;">Zárás</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Hétfő-Péntek</td>
+
+                        <td>09:00</td>
+
+                        <td>21:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Szombat</td>
+
+                        <td>10:00 </td>
+
+                        <td>22:00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Vasárnap</td>
+
+                        <td colspan="2">ZÁRVA</td>
+                        <tr>
+
+                            <td colspan="3">&copy;2020. Fantastic Burger Kft.</td>
+    
+                        </tr>
+
+                </table>
+            </td>
+        </tr>
     </table>
 </body>
 
